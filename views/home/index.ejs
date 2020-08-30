@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+         <%= title %>
+    </h1>
+    <ul>
+        <% mylist.forEach(item => {  %>
+             <%- include('./../layouts/item', { i : item }) %>
+      <%  })   %>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ab necessitatibus dicta accusantium facere laboriosam quidem assumenda rem enim labore totam, commodi quas dolore, architecto nesciunt eum eius ex hic!</p>
+</body>
+</html>
